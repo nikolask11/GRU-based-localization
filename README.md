@@ -6,7 +6,7 @@ Comparing particle filter vs neural network for 2D robot localization.
 
 A robot moves in a 20×20 world with 8 landmarks. Both methods try to estimate the robot's position `(x, y, θ)` using noisy sensors and movement data.
 
-**Result**: Particle filter wins. Neural networks struggle with global localization because they can't maintain multiple hypotheses.
+**Result**: Particle filter wins. Neural networks have higher error rate as they use function approximators.
 
 ## Setup
 
