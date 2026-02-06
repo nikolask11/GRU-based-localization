@@ -1,4 +1,4 @@
-# GRU-based Robot Localization
+# R-MDN-based Robot Localization
 
 Comparing particle filter vs neural network for 2D robot localization.
 
@@ -28,11 +28,11 @@ This will train the neural network, run both methods, and save comparison plots.
 
 **Particle Filter**: Maintains multiple location hypotheses as weighted particles.
 
-**GRU Network**: Predicts a single location from sensor/movement history.
+**R-MDN Network**: Predicts a 5 Component Gaussians that collaps onto a single trajectory
 
 ## Why neural network loses
 
-Global localization is ambiguous early on. Particle filters can say "I don't know yet" by spreading particles. Neural networks must pick one spot immediately.
+Neural Networks rely on approximate functions that are learned. These always lose to set rules-based methods in environments where sensor and motion models are known.
 
 ## License
 
